@@ -13,9 +13,11 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 
 " revove whitespace when file is saved
-autocmd BufWritePre *.py,*.js,*.rb,*.html :call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre *.py,*.js,*.rb,*.html,*.css :call <SID>StripTrailingWhitespaces()
 
 
+" highlight trailing whitespace
+" TODO: should this rather use symbolic names for colorscheme
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\s\+$/
 
@@ -25,5 +27,4 @@ set listchars=tab:>-,trail:·,eol:$
 nmap <silent> <leader>s :set nolist!<CR>
 
 " remove all trailing whitespace with <leader>S
-" TODO: use StripTrailingWhitespaces for this
-noremap <leader>S :%s/\s\+$//g<CR>
+noremap <silent> <leader>S :call <SID>StripTrailingWhitespaces()<CR>
