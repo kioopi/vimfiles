@@ -30,6 +30,7 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsDontReverseSearchPath=0
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
 Bundle 'tpope/vim-surround'
 " Surround: Surround text.
