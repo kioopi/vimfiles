@@ -64,6 +64,8 @@ Bundle 'closetag.vim'
 Bundle 'matchit.zip'
 " makes % matching useful
 
+Bundle 'pangloss/vim-javascript'
+" Better indention for js
 
 
 " =======================================================
