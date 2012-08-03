@@ -13,3 +13,7 @@ nnoremap <S-CR> O<Esc>
 imap jj <Esc>
 inoremap <S-CR> <Esc>
 
+" moving in the location list
+nnoremap <leader>[ :lprevious<CR>
+nnoremap <leader>] :lnext<CR>
+

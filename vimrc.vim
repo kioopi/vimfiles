@@ -67,6 +67,27 @@ Bundle 'matchit.zip'
 Bundle 'pangloss/vim-javascript'
 " Better indention for js
 
+" Plugins for working with buffers
+
+" Bundle 'wincent/Command-T'
+" Command-T
+" Doen't work cause (assuming) cmd-T is compiled with ruby 1.9 and
+" vim is compiled with ruby 1.8
+" Needs fixing by compiling vim with 1.9
+" Command T: File opener
+"   \t, or <C-t>      - Open the file opener
+" let g:CommandTMatchWindowAtTop=1 " show window at top
+
+" Bundle 'mutewinter/LustyJuggler'
+" <Leader>lj          - Open buffer menu
+"
+"
+
+Bundle 'scrooloose/syntastic'
+" Syntax checking hacks for vim
+"
+let g:syntastic_check_on_open=1
+let g:syntastic_python_checker="flake8"
 
 " =======================================================
 "
