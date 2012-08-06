@@ -50,7 +50,7 @@ Bundle 'tpope/vim-commentary'
 "   \\\               -comment out a line (takes a count)
 "   \\motion          -comment out motion
 
-Bundle 'chrismetcalf/vim-yankring'
+Bundle 'vim-scripts/YankRing.vim'
 " YankRink: Kill-Ring like functionality for VIM
 "   p                 - Paste first item in yr
 "   <C-p>             - Paste previous item
@@ -88,6 +88,7 @@ Bundle 'scrooloose/syntastic'
 "
 let g:syntastic_check_on_open=1
 let g:syntastic_python_checker="flake8"
+let g:syntastic_python_checker_args = "--max-line-length=120"
 
 " =======================================================
 "
