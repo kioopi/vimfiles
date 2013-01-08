@@ -103,6 +103,9 @@ Bundle 'michaeljsmith/vim-indent-object'
 " <count>aI         (A)n (I)ndentation level and lines above/below.
 " <count>iI         (I)nner (I)ndentation level (no lines above/below).
 
+Bundle 'davidhalter/jedi-vim'
+" Completion for almost anything (Ctrl+Space)
+" Pydoc support (with highlighting, Shift+k).
 
 
 " Test runner
