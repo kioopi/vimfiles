@@ -53,7 +53,7 @@ set lazyredraw                  "lz:    will not redraw the screen while running
 
 set nobackup                    " Seriously, in this age of Git, who needs it
 set nowritebackup               " Don't make a backup before overwriting
-set directory^=$HOME/.vim/_swapfiles// " Temp directory
+set directory=$HOME/.vim/swapfiles/ " Temp directory
 
 " == HUD and status info =====================================================
 
@@ -82,3 +82,5 @@ autocmd FileType python     setlocal sw=4 sts=4
 " == Easy Pasting  ============================================================
 set pastetoggle=<F2>
 
+" == Use shorter versions of blocking messages.
+set shortmess=atI
