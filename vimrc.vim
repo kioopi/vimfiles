@@ -90,12 +90,6 @@ let g:syntastic_check_on_open=1
 let g:syntastic_python_checker="flake8"
 let g:syntastic_python_checker_args = "--max-line-length=80"
 
-" =======================================================
-"
-" For bundles not managed by Vundle, plop them onto extras/.
-let extra_paths=substitute(glob('~/.vim/extras/*'), '\n', ',', 'g')
-exec 'set runtimepath+=' . extra_paths
-
 Bundle 'michaeljsmith/vim-indent-object'
 " Text object for selecting via indentation
 " <count>ai         (A)n (I)ndentation level and line above.
@@ -114,6 +108,12 @@ Bundle 'davidhalter/jedi-vim'
 " "
 " map <F10> :Test<Cr>
 " map ,tl <C-w>n:e test.log<Cr>a<Esc>:set ft=ruby<Cr>
+
+" =======================================================
+"
+" For bundles not managed by Vundle, plop them onto extras/.
+let extra_paths=substitute(glob('~/.vim/extras/*'), '\n', ',', 'g')
+exec 'set runtimepath+=' . extra_paths
 
 " =======================================================
 
