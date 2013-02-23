@@ -2,7 +2,7 @@
 
 set encoding=utf-8              "enc:   Character encoding
 set backspace=indent,eol,start  "bs:    Backspacing over insert mode
-set history=100                 "hi:    lines of command line history
+set history=200                 "hi:    lines of command line history
 " set ruler                       "ru:    show the cursor position all the time
 set showcmd                     "sc:    display incomplete commands
 set incsearch                   "is:    do incremental searching
