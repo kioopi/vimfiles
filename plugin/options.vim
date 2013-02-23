@@ -6,7 +6,7 @@ set history=200                 "hi:    lines of command line history
 " set ruler                       "ru:    show the cursor position all the time
 set showcmd                     "sc:    display incomplete commands
 set incsearch                   "is:    do incremental searching
-" set hidden                      "hid:   Don't care about closing modified buffers
+set hidden                      "hid:   Don't care about closing modified buffers
 set winminheight=0              "wmh:   Allow showing windows as just status bars
 "set mouse=a                     "       Enable the use of a mouse
 "set nowrap
