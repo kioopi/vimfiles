@@ -6,10 +6,9 @@ My VIM configuration.
 Plugins are managed by [Vundle][vundle].
 
 
-
 Usage
 -----
-Structure is largely identical to [rstacruz/vimfiles][rstacruz/vimfiles] without the rake file.  Also, i don't clone the repo direclty into ~/.vim but manually set symlinks.
+Structure is largely identical to [rstacruz/vimfiles][rstacruz/vimfiles] without the rake file.  Also, i don't clone the repo directly into ~/.vim but manually set symlinks.
 
     * `vimrc.vim`         - Put your bundles here.
     * `plugin/`           - Put your initializers here.
