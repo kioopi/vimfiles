@@ -74,17 +74,9 @@ set wildmode=longest:full,list:full  "wim:   helps wildmenu auto-completion
 set wildignore+=*.o,*.obj
 set wildignore+=vendor,*.pyc,logs,tmp,.sass-cache,doc,*~
 
-" == Indentations ============================================================
+" == Use html syntax highlighter for hbs files
 
-autocmd FileType javascript setlocal nocindent smartindent sw=2 sts=2
-autocmd FileType python     setlocal sw=4 sts=4
-
-" == Opening files without suffix via gf =====================================
-
-autocmd FileType python      set suffixesadd+=.py
-autocmd FileType ruby        set suffixesadd+=.rb
-autocmd FileType javascript  set suffixesadd+=.js
-
+autocmd BufRead,BufNewFile *.hbs set syntax=html
 
 " == Easy Pasting  ============================================================
 set pastetoggle=<F2>
