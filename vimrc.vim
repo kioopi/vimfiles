@@ -101,6 +101,9 @@ Bundle 'davidhalter/jedi-vim'
 " Completion for almost anything (Ctrl+Space)
 " Pydoc support (with highlighting, Shift+k).
 
+Bundle 'tpope/vim-haml'
+" Vim runtime files for Haml, Sass, and SCSS
+
 
 " Test runner
 " "   <F10>   - Run tests
