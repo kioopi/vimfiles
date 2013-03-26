@@ -55,6 +55,7 @@ Bundle 'vim-scripts/YankRing.vim'
 "   p                 - Paste first item in yr
 "   <C-p>             - Paste previous item
 "   :YRShow           - Show contents of yr
+let g:yankring_history_dir = expand('$HOME') . '/.vim'
 
 Bundle 'closetag.vim'
 " Close XML/HTLM tags
