@@ -1,0 +1,1 @@
+/home/kioopi/Projects/vim-jsglobals/plugin/jsglobals.vim
