@@ -1,9 +1,34 @@
 snippet f "anonymous function"
-function(${1}) {${0}
+function($1) { ${VISUAL}$0 }
 endsnippet
 
 snippet fn "anonymous function block"
 function($1) {
   ${VISUAL}$2
 }$0
+endsnippet
+
+snippet promise "libjs.Promise"
+new libjs.Promise(function(deferred){
+  ${VISUAL}
+  ${0:deferred.resolve();}
+}${1:.bind(this)});
+endsnippet
+
+snippet class "libjs.Class"
+${1:ClassName} = libjs.Class.extend({
+  init: function(${2}) {
+    ${VISUAL}$0
+  }
+});
+endsnippet
+
+snippet try "try...catch"
+try {
+  ${VISUAL}
+  $1
+}
+catch (${2:e}) {
+  $0
+}
 endsnippet
