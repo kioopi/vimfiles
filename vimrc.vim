@@ -113,6 +113,27 @@ Bundle 'tpope/vim-haml'
 " map <F10> :Test<Cr>
 " map ,tl <C-w>n:e test.log<Cr>a<Esc>:set ft=ruby<Cr>
 
+
+Bundle 'vim-scripts/vimwiki'
+" <Leader>ww -- Open default wiki index file.
+" <Leader>wt -- Open default wiki index file in a new tab.
+" <Leader>ws -- Select and open wiki index file.
+" <Leader>wd -- Delete wiki file you are in.
+" <Leader>wr -- Rename wiki file you are in.
+" <Enter> -- Follow/Create wiki link
+" <Shift-Enter> -- Split and folow/create wiki link
+" <Ctrl-Enter> -- Vertical split and folow/create wiki link
+" <Backspace> -- Go back to parent(previous) wiki link
+" <Tab> -- Find next wiki link
+" <Shift-Tab> -- Find previous wiki link
+
+let wiki = {}
+let wiki.path = '~/Dropbox/wiki/'
+let wiki.auto_export = 1
+
+let g:vimwiki_list = [wiki]
+
+
 " =======================================================
 "
 " For bundles not managed by Vundle, plop them onto extras/.
