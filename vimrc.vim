@@ -130,6 +130,9 @@ Bundle 'vim-scripts/vimwiki'
 let wiki = {}
 let wiki.path = '~/Dropbox/wiki/'
 let wiki.auto_export = 1
+let wiki.template_path = '~/Dropbox/wiki_templates/'
+let wiki.template_default = 'default'
+let wiki.template_ext = '.html'
 
 let g:vimwiki_list = [wiki]
 
