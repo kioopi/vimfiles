@@ -102,9 +102,10 @@ Bundle 'davidhalter/jedi-vim'
 " Completion for almost anything (Ctrl+Space)
 " Pydoc support (with highlighting, Shift+k).
 
+""""" Ruby
+
 Bundle 'tpope/vim-haml'
 " Vim runtime files for Haml, Sass, and SCSS
-
 
 " Test runner
 " "   <F10>   - Run tests
@@ -112,7 +113,37 @@ Bundle 'tpope/vim-haml'
 " "
 " map <F10> :Test<Cr>
 " map ,tl <C-w>n:e test.log<Cr>a<Esc>:set ft=ruby<Cr>
+"
+Bundle 'tpope/vim-rails'
+" Ruby on Rails power tools
+" :A (alternate)
+" :R (related)
+" :Emodel, Econtroller, Eview to jump to files
+" :Rake run current test
+" :.Rake run test of method on line
+" :Rextract extract partial/helper
 
+Bundle 'tpope/vim-bundler'
+
+Bundle 'thoughtbot/vim-rspec'
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+" this assumes vim was opened from rails app root dir
+let g:rspec_command = "!bin/rspec {spec}"
+
+Bundle 'kana/vim-textobj-user'
+" vim-textobj-user is a Vim plugin to create your own text objects without
+" pain. Required by:
+
+Bundle 'nelstrom/vim-textobj-rubyblock'
+" makes text-object for ruby blocks available
+" vir : visually select in ruby block
+
+"""""
 
 Bundle 'vim-scripts/vimwiki'
 " <Leader>ww -- Open default wiki index file.

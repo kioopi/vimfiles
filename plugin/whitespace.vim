@@ -24,7 +24,7 @@ match ExtraWhitespace /\s\+$/
 
 " trigger display of trailing spaces and newlines with <leader>s
 set listchars=tab:>-,trail:·,eol:$
-nmap <silent> <leader>s :set nolist!<CR>
+" nmap <silent> <leader>s :set nolist!<CR>
 
 " remove all trailing whitespace with <leader>S
 noremap <silent> <leader>S :call <SID>StripTrailingWhitespaces()<CR>
