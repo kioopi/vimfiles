@@ -7,4 +7,5 @@ augroup filetypedetect
   au! BufNewFile,BufRead config.ru setf ruby
   au! BufNewFile,BufRead *.rake    setf ruby
   au! BufNewFile,BufRead *.thor    setf ruby
+  au! BufNewFile,BufRead *.arb    setf ruby
 augroup END
