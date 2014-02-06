@@ -50,6 +50,14 @@ Bundle 'tpope/vim-commentary'
 "   \\\               -comment out a line (takes a count)
 "   \\motion          -comment out motion
 
+Bundle 'tpope/vim-eunuch'
+"   :Unlink: Delete a buffer and the file on disk simultaneously.
+"   :Remove: Like :Unlink, but doesn't require a neckbeard.
+"   :Move: Rename a buffer and the file on disk simultaneously.
+"   :Chmod: Change the permissions of the current file.
+"   :SudoWrite: Write a privileged file with sudo.
+"   :W: Write every open window.  Handy for kicking off test autorunners.
+
 Bundle 'vim-scripts/YankRing.vim'
 " YankRink: Kill-Ring like functionality for VIM
 "   p                 - Paste first item in yr
