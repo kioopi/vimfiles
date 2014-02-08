@@ -24,13 +24,13 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim'}
 
 Bundle 'SirVer/ultisnips'
 " UltiSnips: Tab snippets
-"   <Tab>             - Expand snippet
-"
+
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsDontReverseSearchPath=0
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
+let g:UltiSnipsListSnippets="<leader><tab>"
 
 Bundle 'tpope/vim-surround'
 " Surround: Surround text.
