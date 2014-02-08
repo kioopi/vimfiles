@@ -175,6 +175,10 @@ let wiki.template_ext = '.html'
 
 let g:vimwiki_list = [wiki]
 
+Bundle 'evanmiller/nginx-vim-syntax'
+" Syntax highlighting for nginx conf
+" NOTE: As of Dec. 2013, this is  maintained in the "contrib" dir of the Nginx source:
+" Shttp://hg.nginx.org/nginx/rev/f38043bd15f5
 
 " =======================================================
 "
