@@ -188,4 +188,6 @@ exec 'set runtimepath+=' . extra_paths
 
 " =======================================================
 
+set runtimepath+=/usr/local/go/misc/vim
+
 filetype plugin indent on
