@@ -23,17 +23,16 @@ Getting started
 
 After installing VIM:
 
-   $ git clone git@github.com:kioopi/vimfiles ~/vimfiles
-   $ ln -s ~/vimfiles/vimrc.vim ~/.vimrc
-   $ mkdir ~/.vim
-   $ mkdir ~/.vim/bundle
-   $ mkdir ~/.vim/swapfiles
-   $ ln -s ~/vimfiles/{after,extras,plugin,UltiSnips} ~/.vim/
+    $ git clone git@github.com:kioopi/vimfiles ~/vimfiles
+    $ ln -s ~/vimfiles/vimrc.vim ~/.vimrc
+    $ mkdir ~/.vim
+    $ mkdir ~/.vim/{bundle,swapfiles}
+    $ ln -s ~/vimfiles/{after,extras,plugin,UltiSnips} ~/.vim/
 
-Install Vundle
+Install Vundle:
 
-   $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+    $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
-Install Bundles
+Install Bundles:
 
-   $ vim -c BundleInstall
+    $ vim -c BundleInstall
