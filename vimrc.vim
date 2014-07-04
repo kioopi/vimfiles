@@ -20,7 +20,10 @@ Bundle 'gmarik/vundle'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim'}
 " Sparkup: HTML helper
 " "   <C-e>             - Expand (HTML only)
-" "   <C-n>             - Move to next
+" "   <C-s>             - Move to next
+
+let g:sparkupExecuteMapping = '<c-e>'
+let g:sparkupNextMapping = '<c-s>'
 
 Bundle 'SirVer/ultisnips'
 " UltiSnips: Tab snippets
