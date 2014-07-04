@@ -190,6 +190,19 @@ Bundle 'evanmiller/nginx-vim-syntax'
 " NOTE: As of Dec. 2013, this is  maintained in the "contrib" dir of the Nginx source:
 " Shttp://hg.nginx.org/nginx/rev/f38043bd15f5
 
+
+"""" Golang
+
+Bundle 'dgryski/vim-godef'
+" makes gd work for go via godef
+" needs: go get -v code.google.com/p/rog-go/exp/cmd/godef
+
+let g:godef_split=0
+let g:godef_same_file_in_same_window=1
+
+set runtimepath+=$GOSHARE/misc/vim
+
+
 " =======================================================
 "
 " For bundles not managed by Vundle, plop them onto extras/.
@@ -200,5 +213,6 @@ exec 'set runtimepath+=' . extra_paths
 "
 " FIXME: this should move somewhere useful
 set runtimepath+=/usr/local/go/misc/vim
+
 
 filetype plugin indent on
