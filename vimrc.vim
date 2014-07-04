@@ -190,5 +190,8 @@ let extra_paths=substitute(glob('~/.vim/extras/*'), '\n', ',', 'g')
 exec 'set runtimepath+=' . extra_paths
 
 " =======================================================
+"
+" FIXME: this should move somewhere useful
+set runtimepath+=/usr/local/go/misc/vim
 
 filetype plugin indent on
