@@ -101,6 +101,18 @@ Bundle 'scrooloose/syntastic'
 let g:syntastic_check_on_open=1
 let g:syntastic_python_checker="flake8"
 let g:syntastic_python_checker_args = "--max-line-length=80"
+let g:syntastic_javascript_checkers = ['eslint']
+
+" Bundle 'Shougo/neocomplete'
+" keyword completion system
+
+"Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
+"" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+" Use neocomplete.
+let g:neocomplete#enable_at_startup = 1
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
 
 Bundle 'junegunn/goyo.vim'
 " Distraction-free writing in Vim.
@@ -202,6 +214,11 @@ let g:godef_same_file_in_same_window=1
 
 set runtimepath+=$GOSHARE/misc/vim
 
+"""" Colors
+
+Bundle 'https://github.com/freeo/vim-kalisi'
+Bundle 'ajh17/Spacegray.vim'
+
 
 " =======================================================
 "
@@ -213,6 +230,5 @@ exec 'set runtimepath+=' . extra_paths
 "
 " FIXME: this should move somewhere useful
 set runtimepath+=/usr/local/go/misc/vim
-
 
 filetype plugin indent on
