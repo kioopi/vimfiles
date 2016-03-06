@@ -79,6 +79,18 @@ Bundle 'matchit.zip'
 Bundle 'pangloss/vim-javascript'
 " Better indention for js
 
+" Bundle 'marijnh/tern_for_vim'
+" Tern-based JavaScript editing support.
+" let g:tern#command = ['nvm', 'run', '0.10.5', expand('<sfile>:h') .  '/../node_modules/tern/bin/tern']
+
+" Bundle 'tpope/vim-vinegar'
+" - Open netrw
+"
+
+Bundle 'elzr/vim-json'
+" JSON Syntax 
+let g:vim_json_syntax_conceal = 0
+
 " Plugins for working with buffers
 
 " Bundle 'wincent/Command-T'
