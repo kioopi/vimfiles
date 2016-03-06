@@ -8,4 +8,5 @@ augroup filetypedetect
   au! BufNewFile,BufRead *.rake    setf ruby
   au! BufNewFile,BufRead *.thor    setf ruby
   au! BufNewFile,BufRead *.arb    setf ruby
+  au! BufNewFile,BufRead *.json    setf json
 augroup END
