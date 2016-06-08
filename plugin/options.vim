@@ -78,8 +78,5 @@ set wildignore+=vendor,*.pyc,logs,tmp,.sass-cache,doc,*~
 
 autocmd BufRead,BufNewFile *.hbs set syntax=html
 
-" == Easy Pasting  ============================================================
-set pastetoggle=<F2>
-
 " == Use shorter versions of blocking messages.
 set shortmess=atI
