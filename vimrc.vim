@@ -187,6 +187,12 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 
 """""
 
+""""" Elixir
+
+Bundle 'elixir-lang/vim-elixir'
+
+"""""
+
 Bundle 'vim-scripts/vimwiki'
 " <Leader>ww -- Open default wiki index file.
 " <Leader>wt -- Open default wiki index file in a new tab.
