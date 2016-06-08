@@ -232,6 +232,8 @@ let g:godef_same_file_in_same_window=1
 
 set runtimepath+=$GOSHARE/misc/vim
 
+Bundle 'asciidoc/vim-asciidoc'
+
 """" Colors
 
 Bundle 'https://github.com/freeo/vim-kalisi'
