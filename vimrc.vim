@@ -113,7 +113,10 @@ Bundle 'scrooloose/syntastic'
 let g:syntastic_check_on_open=1
 let g:syntastic_python_checker="flake8"
 let g:syntastic_python_checker_args = "--max-line-length=80"
-let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_checkers = ['eslint', 'flow']
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
+let g:syntastic_javascript_flow_exe = 'flow'
+let g:syntastic_aggregate_errors = 1
 
 " Bundle 'Shougo/neocomplete'
 " keyword completion system
