@@ -35,6 +35,9 @@ let g:UltiSnipsDontReverseSearchPath=0
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 let g:UltiSnipsListSnippets="<leader><tab>"
 
+Bundle 'honza/vim-snippets'
+
+
 Bundle 'tpope/vim-surround'
 " Surround: Surround text.
 "   (Visual) S"       - Surround with "
@@ -68,6 +71,12 @@ Bundle 'vim-scripts/YankRing.vim'
 "   :YRShow           - Show contents of yr
 let g:yankring_history_dir = expand('$HOME') . '/.vim'
 
+Bundle 'ton/vim-bufsurf'
+" :BufSurfBack
+" :BufSurfForward
+nmap <S-BS> :BufSurfBack<CR>
+nmap <BS> :BufSurfForward<CR>
+
 Bundle 'closetag.vim'
 " Close XML/HTLM tags
 " <C-_> add closing tag for last opened tag
@@ -83,15 +92,26 @@ Bundle 'pangloss/vim-javascript'
 " Tern-based JavaScript editing support.
 " let g:tern#command = ['nvm', 'run', '0.10.5', expand('<sfile>:h') .  '/../node_modules/tern/bin/tern']
 
+"Bundle 'chemzqm/vim-jsx-improve'
+
+
 " Bundle 'tpope/vim-vinegar'
 " - Open netrw
-"
 
 Bundle 'elzr/vim-json'
-" JSON Syntax 
+" JSON Syntax
 let g:vim_json_syntax_conceal = 0
 
 " Plugins for working with buffers
+"
+set rtp+=~/.fzf
+Bundle 'junegunn/fzf.vim'
+Bundle 'junegunn/fzf'
+
+nmap <Leader>b :Buffers<CR>
+nmap <Leader>f :Files<CR>
+
+
 
 " Bundle 'wincent/Command-T'
 " Command-T
@@ -149,7 +169,7 @@ Bundle 'davidhalter/jedi-vim'
 
 """"" Ruby
 
-Bundle 'tpope/vim-haml'
+" Bundle 'tpope/vim-haml'
 " Vim runtime files for Haml, Sass, and SCSS
 
 " Test runner
@@ -159,7 +179,7 @@ Bundle 'tpope/vim-haml'
 " map <F10> :Test<Cr>
 " map ,tl <C-w>n:e test.log<Cr>a<Esc>:set ft=ruby<Cr>
 "
-Bundle 'tpope/vim-rails'
+"Bundle 'tpope/vim-rails'
 " Ruby on Rails power tools
 " :A (alternate)
 " :R (related)
@@ -192,7 +212,7 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 
 """"" Elixir
 
-Bundle 'elixir-lang/vim-elixir'
+Bundle 'elixir-editors/vim-elixir'
 
 """""
 
